@@ -1,0 +1,280 @@
+.main-container {
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 1; /* This gives the sidebar 1/5 of the space */
+    background-color: #F2F3F4;
+    padding: 10px;
+    border-right: 0px solid #ccc;
+}
+
+.tour-list h3 {
+    margin-bottom: 10px;
+}
+
+.tour-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px; /* 根据实际情况调整内边距 */
+}
+
+/* 确保悬停样式不会覆盖高亮样式 */
+.tour-item.highlight {
+  background-color: #F8C471; /* 正确的黄色背景高亮 */
+  font-weight: bold; /* 加粗字体 */
+}
+
+.tour-item.highlight:hover {
+  background-color: #F1C40F; /* 高亮颜色保持不变即使在悬停时 */
+}
+
+
+/* Reset some basic elements */
+body, h1, h2, button, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #00AEEF;
+  color: white;
+}
+
+.navbar {
+  background-color: #A2D9CE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 0.5em;
+  width: 50px; /* 或你需要的大小 */
+  height: auto; /* 保持图像的比例不变 */
+}
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.navigation a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.navigation a:hover:after {
+  opacity: 1;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: white;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #f4f4f4;
+}
+
+main {
+    width: 80%;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 20px;
+    position: relative;
+}
+
+.profile-header {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background: #17202A;
+    padding: 5px 20px;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+input[type="text"], select {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Adds shadow: right and down 3px, blur 5px, semi-transparent black */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /* Darker and larger shadow on hover */
+}
+
+.text-left {
+    align-self: flex-start;
+  margin-top: 20px;
+    margin-bottom: 0px;
+    color: #3498DB !important;
+    font-weight: bold;
+}
+
+.address-label {
+  align-self: flex-start;
+  margin-top: 80px;
+  margin-bottom: -10px;
+  margin-left: -18px;
+  color: #3498DB !important;
+  font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: -17px;
+}
+
+.address-label {
+    padding-left: 20px; /* Match the padding of the 'Emily Account' text */
+    margin-bottom: 5px; /* Small space above the line */
+    color: #000; /* Set the text color to match 'Emily Account' */
+    font-size: 1em; /* Set the font size to match 'Emily Account' */
+}
+
+
+
+
+
+.footer-module {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px; /* Adjust padding as needed */
+    border-top: 2px solid black; /* Top border line */
+    margin-top: -18px;
+    background-color: white;
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-text {
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-left: -11px;
+}
+
+.footer-text {
+    font-size: 16px; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between the text and icons */
+}
+
+.payment-icons i {
+    font-size: 24px; /* Adjust the font size to make the icons larger */
+    margin-right: 15px; /* Adds space between the icons */
+  color: #A6ACAF;
+}
+
+
+.favorite-container {
+    display: flex;
+    align-items: center;
+  margin-left: -10px;
+}
+
+#favourite {
+    padding: 5px 10px; /* Adjust padding as needed */
+    margin-right: 10px; /* Space between the text input and the button */
+}
+
+.add-button {
+    padding: 5px 15px; /* Adjust padding as needed */
+    background-color: #6FAEDD; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+    margin-top: -9px;
+}

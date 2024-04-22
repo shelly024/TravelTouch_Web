@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelTouch - Home</title>
+<link rel="stylesheet" href="web_profile.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="https://github.com/shelly024/image-hosting/blob/main/iconnew.png?raw=true" alt="TravelTouch Logo">
+      <span>TravelTouch</span>
+    </div>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li>|</li>
+      <li><a href="web_destination.html">Destination</a></li>
+      <li>|</li>
+      <li><a href="web_routinelist.html">Event</a></li>
+      <li>|</li>
+      <li><a href="web_addevent.html">Plan</a></li>
+      <li>|</li>
+      <li><a href="web_chat.html">Friends</a></li>
+    </ul>
+    <div class="user-controls">
+      <button type="button" class="icon-button search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a href="web_profile.html" class="icon-button user-button">
+    <i class="fa-regular fa-user"></i>
+</a>
+      <button type="button" class="logout-button">Log out</button>
+    </div>
+  </nav>
+</header>
+<main>
+        <div class="profile-header">
+            <span>Profile</span>
+        </div>
+        <div class="row" id="row1">
+            <span class="text-left">Emily Account: 134563234@gmail.com</span>
+            <div class="buttons">
+                <button>Cancel</button>
+                <button>Edit</button>
+                <button>Submit Change</button>
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="row2">
+            <div class="column">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Phone">
+              <div class="address-label">Address</div>
+            </div>
+            <div class="column">
+                <input type="text" placeholder="Annual Revenue">
+                <input type="text" placeholder="Number of Employees">
+                <input type="text" placeholder="SAP ID">
+                <input type="text" placeholder="Year Founded">
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="row3">
+            <div class="column">
+                <input type="text" placeholder="Field 1">
+                <select>
+                    <option value="picklist2">picklist 2</option>
+                </select>
+                <input type="text" placeholder="Field 3">
+            </div>
+            <div class="column">
+                <input type="text" placeholder="Field 4">
+                <select>
+                    <option value="picklist1">picklist 1</option>
+                </select>
+            </div>
+        </div>
+</main>
+
+  <footer class="footer-module">
+    <div class="left-footer">
+      <div class="footer-text">
+            TravelTouch
+        </div>
+      <div class="payment-icons">
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-amex"></i>
+        <!-- Add more icons as needed -->
+    </div>
+</div>
+
+    <div class="right-footer">
+        <!-- Favourite and Add buttons -->
+        <div class="newsletter-text">
+    Stay in Touch! Join our Newsletter.
+  </div>
+      <div class="favorite-container">
+        <input type="text" id="favourite" name="favourite" placeholder="Enter Email">
+        <button type="button" class="add-button">Subscribe</button>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelTouch - Home</title>
+<link rel="stylesheet" href="web_routinelist.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="https://github.com/shelly024/image-hosting/blob/main/iconnew.png?raw=true" alt="TravelTouch Logo">
+      <span>TravelTouch</span>
+    </div>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li>|</li>
+      <li><a href="web_destination.html">Destination</a></li>
+      <li>|</li>
+      <li><a href="web_routinelist.html">Event</a></li>
+      <li>|</li>
+      <li><a href="web_addevent.html">Plan</a></li>
+      <li>|</li>
+      <li><a href="web_chat.html">Friends</a></li>
+    </ul>
+    <div class="user-controls">
+      <button type="button" class="icon-button search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a href="web_profile.html" class="icon-button user-button">
+    <i class="fa-regular fa-user"></i>
+</a>
+      <button type="button" class="logout-button">Log out</button>
+    </div>
+  </nav>
+</header>
+<main>
+
+<!-- Rest of your existing main content goes here... -->
+
+  <div class="main-container">
+
+    <aside class="sidebar">
+        <div class="tour-list">
+            <h3>Tours</h3>
+<div class="tour-item highlight">
+      <span>Greeece Tour</span>
+      <i class="fa-solid fa-right-to-bracket"></i> <!-- 添加图标 -->
+    </div>
+    <div class="tour-item">
+      <span>Tour 2</span>
+      <i class="fa-solid fa-right-to-bracket"></i>
+    </div>
+    <div class="tour-item">
+      <span>Tour 3</span>
+      <i class="fa-solid fa-right-to-bracket"></i>
+    </div>
+    <div class="tour-item">
+      <span>Tour 4</span>
+      <i class="fa-solid fa-right-to-bracket"></i>
+    </div>
+            <!-- Additional tours can be added here -->
+        </div>
+    </aside>
+
+
+
+    <div class="left-column">
+    <!-- Content section -->
+      <div class="top-container">
+    <!-- Paris Tour Module -->
+    <div class="paris-tour-module">
+        <div class="tour-detail-row">
+            <span class="tour-detail-title">Greece tour</span>
+            <span class="tour-icons">
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-plane"></i>
+            </span>
+        </div>
+        <div class="tour-detail-row">
+            <span class="tour-detail-label">date</span>
+            <span class="tour-detail-date">22/11/24</span>
+        </div>
+        <div class="tour-detail-row">
+            <css-icon class="icon-caret"></css-icon>
+            <span class="tour-detail-recommend">More recommended</span>
+        </div>
+    </div>
+
+    <!-- Members Module -->
+    <div class="members-module">
+                <span class="members-title">Members</span>
+        <div class="member-icons">
+            <!-- Repeat the member-icon six times for six user icons -->
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </div>
+</div>
+
+
+
+      <div class="tab-container">
+        <button class="tab active">Overview</button>
+        <button class="tab">Event 1</button>
+        <button class="tab">Event 2</button>
+        <button class="tab">Event 3</button>
+        <button class="tab">Event 4</button>
+    </div>
+   <div class="image-container">
+            <img src="https://github.com/shelly024/image-hosting/blob/main/greece.png?raw=true" class="responsive-image"/>
+        </div>
+        <!-- Text and details section -->
+            <!-- Details section -->
+           <div class="combined-text-details">
+        <!-- Text section -->
+        <div class="text-container">
+            <p>Greece, a country with a rich history, is known for its stunning landscapes...</p>
+        </div>
+        <!-- Details section -->
+        <div class="details-container">
+            <p><strong>Destination:</strong> Dublin to Greece</p>
+            <p><strong>Personal cost:</strong> 500 $</p>
+            <p><strong>Date:</strong> 12/08/2024</p>
+        </div>
+    </div>
+</div>
+
+<div class="right-content">
+    <!-- First image module -->
+    <div class="user-image-module">
+        <img src="https://github.com/shelly024/image-hosting/blob/main/lindy.png?raw=true" alt="First Image" class="right-side-image">
+        <!-- Image description, if needed -->
+    </div>
+
+    <!-- Second image module -->
+    <div class="settings-image-module">
+        <img src="https://github.com/shelly024/image-hosting/blob/main/list.png?raw=true" alt="Second Image" class="right-side-image">
+        <!-- Image description, if needed -->
+    </div>
+</div>
+</div>
+</main>
+
+  <footer class="footer-module">
+    <div class="left-footer">
+      <div class="footer-text">
+            TravelTouch
+        </div>
+      <div class="payment-icons">
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-amex"></i>
+        <!-- Add more icons as needed -->
+    </div>
+</div>
+
+<div class="right-footer">
+    <!-- Favourite and Add buttons -->
+    <div class="newsletter-text">
+Stay in Touch! Join our Newsletter.
+</div>
+  <div class="favorite-container">
+    <input type="text" id="favourite" name="favourite" placeholder="Enter Email">
+    <button type="button" class="add-button">Subscribe</button>
+    </div>
+</div>
+</footer>
+</body>
+</html>

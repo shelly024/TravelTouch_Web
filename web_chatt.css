@@ -1,0 +1,213 @@
+/* Reset some basic elements */
+body, h1, h2, button, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #00AEEF;
+  color: white;
+}
+
+.navbar {
+  background-color: #A2D9CE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 0.5em;
+  width: 50px; /* 或你需要的大小 */
+  height: auto; /* 保持图像的比例不变 */
+}
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.navigation a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.navigation a:hover:after {
+  opacity: 1;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: white;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+
+
+
+
+/* Main Chat CSS */
+#main-chat {
+  display: flex;
+  height: 100vh; /* Taking full height of the viewport */
+}
+
+#user-list {
+  width: 25%; /* Adjust as per design */
+  background-color: #f2f2f2; /* Sidebar background color */
+  overflow-y: auto; /* For scrolling if users exceed viewport height */
+  padding: 20px; /* Spacing around user elements */
+}
+
+.user {
+  padding: 10px 0 10px 20px; /* Top and bottom padding of 10px, left padding of 20px */
+  border-bottom: 1px solid #ccc; /* Horizontal line below each name */
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 10px; /* Space between user rows */
+}
+
+.user.highlighted i {
+  color: #F1C40F; /* This is a sample color - a shade of blue */
+  font-weight: bold;
+}
+
+.user.highlighted .user-name {
+  font-weight: bold; /* Makes the text bold */
+  color: #F1C40F; /* This is a sample color - a shade of blue */
+}
+
+.fa-bell {
+  margin-left: auto; /* Pushes the bell icon to the right */
+}
+
+.fa-user {
+  margin-right: 0px; /* Space between icon and name */
+  min-width: 0px; /* Ensures alignment if text wraps */
+}
+
+#chat-area {
+  width: 75%; /* Adjust as per design */
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex-grow: 1; /* Chat messages take all available space */
+   /* Background color for chat area */
+  padding: 20px; /* Spacing inside chat area */
+  overflow-y: auto; /* For scrolling through messages */
+  background-color: #ffffff;
+}
+
+
+.message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px; /* Adjust the space between messages */
+}
+
+.message.left {
+  justify-content: flex-start;
+}
+
+.message.right {
+  justify-content: flex-end;
+}
+
+.message-bubble {
+  max-width: 60%; /* Limits the width of the text bubble */
+  padding: 12px;
+  background-color: #f0f0f0; /* Background color for messages from others */
+  border-radius: 18px; /* Rounded corners for the bubble */
+  position: relative; /* Required for tail effect */
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.message-bubble.self {
+  background-color: #58D68D; /* Distinct background color for self messages */
+  color: white; /* Text color for self messages */
+}
+
+.message-icon {
+  width: 30px; /* Icon size */
+  height: 45px;
+  margin-right: 10px; /* Space between icon and bubble for left-aligned messages */
+}
+
+.message.right .message-icon {
+  margin-left: 10px; /* Space between bubble and icon for right-aligned messages */
+  margin-right: 0;
+}
+
+.message-text {
+  margin-right: 10px; /* Space between text and icon for right-aligned messages */
+}
+
+/* Ensure that the icon on the right does not have margin on the right side */
+.message.right .message-icon {
+  margin-right: 0;
+  margin-left: 10px; /* Space between text and icon for right-aligned messages */
+}
+
+#message-input {
+  display: flex;
+  padding: 10px; /* Spacing around input area */
+  background-color: #e6e6e6; /* Background color for input area */
+}
+
+#message-input input[type="text"] {
+  flex-grow: 1; /* Input field takes all available space */
+  margin-right: 10px; /* Space between input field and button */
+}
+
+#message-input button {
+  padding: 10px 20px; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelTouch - Home</title>
+<link rel="stylesheet" href="web_chatt.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="https://github.com/shelly024/image-hosting/blob/main/iconnew.png?raw=true" alt="TravelTouch Logo">
+      <span>TravelTouch</span>
+    </div>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li>|</li>
+      <li><a href="web_destination.html">Destination</a></li>
+      <li>|</li>
+      <li><a href="web_routinelist.html">Event</a></li>
+      <li>|</li>
+      <li><a href="web_addevent.html">Plan</a></li>
+      <li>|</li>
+      <li><a href="web_chat.html">Friends</a></li>
+    </ul>
+    <div class="user-controls">
+      <button type="button" class="icon-button search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a href="web_profile.html" class="icon-button user-button">
+    <i class="fa-regular fa-user"></i>
+</a>
+      <button type="button" class="logout-button">Log out</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<div id="main-chat">
+  <aside id="user-list">
+    <!-- User information listed here -->
+  <div class="user highlighted"><i class="fa-regular fa-user"></i><span class="user-name">Eve</span></div>
+  <div class="user"><i class="fa-regular fa-user"></i><span class="user-name">Amy</span></div>
+  <div class="user"><i class="fa-regular fa-user"></i><span class="user-name">Emily</span></div>
+  <div class="user"><i class="fa-regular fa-user"></i><span class="user-name">Megan</span><i class="fa-solid fa-bell"></i></div>
+  <div class="user"><i class="fa-regular fa-user"></i><span class="user-name">Olive</span><i class="fa-solid fa-bell"></i></div>
+  </aside>
+
+  <section id="chat-area">
+    <!-- Chat messages will go here -->
+    <div id="messages">
+        <div class="message left"><i class="fa-regular fa-user message-icon"></i><div class="message-bubble"><span class="message-text">Hey, did you check out the itinerary for our trip to Barcelona next month? I think we should book some guided tours for the Sagrada Familia and Park Guell.</span></div></div>
+  <div class="message right"><div class="message-bubble self"><span class="message-text">Yes, I saw that! I’m all for the guided tours. Also, should we consider renting bikes one day? It might be fun to explore the city that way.</span></div><i class="fa-regular fa-user message-icon"></i></div>
+  <div class="message left"><i class="fa-regular fa-user message-icon"></i><div class="message-bubble"><span class="message-text">That sounds like a great idea! Biking along the beach could be really relaxing. We'll need to find a rental place with good reviews. Oh, and we should book a restaurant for the paella night, right?</span></div></div>
+  <div class="message right"><div class="message-bubble self"><span class="message-text">Definitely, let's book that seafood place near the port that got excellent reviews. I'll handle the restaurant reservation. Also, don’t forget to bring a universal adapter for your gadgets!</span></div><i class="fa-regular fa-user message-icon"></i></div>
+  <div class="message left"><i class="fa-regular fa-user message-icon"></i><div class="message-bubble"><span class="message-text">Absolutely, thanks for the reminder! Also, let's make sure our hotel is close to the subway. It will make getting around so much easier. Can't wait for this adventure!</span></div></div>
+    </div>
+    <!-- Input box for new messages -->
+    <div id="message-input">
+      <input type="text" placeholder="Text">
+      <button>Send</button>
+    </div>
+  </section>
+</div>
+</main>
+</body>
+</html>

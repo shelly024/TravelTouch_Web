@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelTouch - Home</title>
+<link rel="stylesheet" href="web_destination.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="https://github.com/shelly024/image-hosting/blob/main/iconnew.png?raw=true" alt="TravelTouch Logo">
+      <span>TravelTouch</span>
+    </div>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li>|</li>
+      <li><a href="web_destination.html">Destination</a></li>
+      <li>|</li>
+      <li><a href="web_routinelist.html">Event</a></li>
+      <li>|</li>
+      <li><a href="web_addevent.html">Plan</a></li>
+      <li>|</li>
+      <li><a href="web_chat.html">Friends</a></li>
+    </ul>
+    <div class="user-controls">
+      <button type="button" class="icon-button search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a href="web_profile.html" class="icon-button user-button">
+    <i class="fa-regular fa-user"></i>
+</a>
+      <button type="button" class="logout-button">Log out</button>
+    </div>
+  </nav>
+</header>
+<main>
+<div class="tab-container">
+        <button class="tab active">Overview</button>
+        <button class="tab">Event 1</button>
+        <button class="tab">Event 2</button>
+        <button class="tab">Event 3</button>
+        <button class="tab">Event 4</button>
+    </div>
+  <div class="main-container">
+    <div class="left-column">
+    <!-- Content section -->
+   <div class="image-container">
+            <img src="https://github.com/shelly024/image-hosting/blob/main/greece.png?raw=true" class="responsive-image"/>
+        </div>
+        <!-- Text and details section -->
+            <!-- Details section -->
+           <div class="combined-text-details">
+        <!-- Text section -->
+        <div class="text-container">
+            <p>Greece, a country with a rich history, is known for its stunning landscapes...</p>
+        </div>
+        <!-- Details section -->
+        <div class="details-container">
+            <p><strong>Destination:</strong> Dublin to Greece</p>
+            <p><strong>Personal cost:</strong> 500 $</p>
+            <p><strong>Date:</strong> 12/08/2024</p>
+        </div>
+    </div>
+</div>
+
+<div class="right-content">
+    <!-- First image module -->
+    <div class="user-image-module">
+        <img src="https://github.com/shelly024/image-hosting/blob/main/lindy.png?raw=true" alt="First Image" class="right-side-image">
+        <!-- Image description, if needed -->
+    </div>
+
+    <!-- Second image module -->
+    <div class="settings-image-module">
+        <img src="https://github.com/shelly024/image-hosting/blob/main/list.png?raw=true" alt="Second Image" class="right-side-image">
+        <!-- Image description, if needed -->
+    </div>
+</div>
+</div>
+</main>
+
+  <footer class="footer-module">
+    <div class="left-footer">
+      <div class="footer-text">
+            TravelTouch
+        </div>
+      <div class="payment-icons">
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-amex"></i>
+        <!-- Add more icons as needed -->
+    </div>
+</div>
+
+    <div class="right-footer">
+        <!-- Favourite and Add buttons -->
+        <input type="text" id="favourite" name="favourite" placeholder="Favourite">
+        <a href="web_addevent.html" class="add-button">ADD</a>
+    </div>
+</footer>
+</body>
+</html>

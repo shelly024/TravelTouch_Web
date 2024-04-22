@@ -1,0 +1,441 @@
+.main-container {
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 1; /* This gives the sidebar 1/5 of the space */
+    background-color: #F2F3F4;
+    padding: 10px;
+    border-right: 0px solid #ccc;
+}
+
+.tour-list h3 {
+    margin-bottom: 10px;
+}
+
+.tour-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px; /* 根据实际情况调整内边距 */
+}
+
+/* 确保悬停样式不会覆盖高亮样式 */
+.tour-item.highlight {
+  background-color: #F8C471; /* 正确的黄色背景高亮 */
+  font-weight: bold; /* 加粗字体 */
+}
+
+.tour-item.highlight:hover {
+  background-color: #F1C40F; /* 高亮颜色保持不变即使在悬停时 */
+}
+
+
+/* Reset some basic elements */
+body, h1, h2, button, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #00AEEF;
+  color: white;
+}
+
+.navbar {
+  background-color: #A2D9CE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 0.5em;
+  width: 50px; /* 或你需要的大小 */
+  height: auto; /* 保持图像的比例不变 */
+}
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.navigation a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.navigation a:hover:after {
+  opacity: 1;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: white;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Main styles */
+/* Reset basic elements */
+body, h1, h2, button, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main styles */
+main {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.tab-container {
+  display: inline-flex;
+  padding-left: 0px;
+  border: 0px solid black; /* Adds a black border */
+}
+
+.tab {
+  padding: 10px 20px;
+  border: 0px solid black;
+  margin-right: 0px; /* Negative margin to remove the gap between tabs */
+  background: white;
+  cursor: pointer;
+}
+
+
+
+.tab:hover,
+.tab.active {
+  background-color: #AED6F1;
+}
+
+/* Image and text/details container styling */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content {
+    display: flex;
+}
+
+.image-container {
+  width: 100%;
+  border: 2px solid black;
+  border-right: 2px solid black;
+  box-sizing: border-box;
+}
+
+.combined-text-details {
+  display: flex;
+  margin-top: 0px;
+  border-top: 0px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; /* Should match the width of image-container */
+  box-sizing: border-box; /* Makes sure padding and borders are included in the width */
+  padding: 20px;
+}
+
+.text-container {
+  width: 100%; /* Full width of the content-section */
+  margin-bottom: 20px; /* Space between text and details */
+  padding: 10px;
+}
+
+.details-container {
+  width: 70%; /* Full width of the content-section */
+  padding: 10px;
+  flex-grow: 1;
+}
+
+/* Detail section styling */
+.detail {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  margin-left: 5px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.left-column, .right-column {
+    display: flex;
+}
+
+.left-column {
+    width: 60%;
+    margin-top: auto;
+}
+
+.right-column {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: auto;
+}
+
+.combined-text-details, .settings-image-module {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.responsive-image {
+    width: 100%;
+    display: block;
+}
+
+.user-image-module, .settings-image-module {
+    width: 80%;
+    display: block;
+}
+
+.user-image-module {
+  display: flex;
+  align-items: center; /* Vertically centers the image in the flex container */
+  justify-content: center; /* Horizontally centers the image in the flex container */
+  /* Add padding if you want some space inside the module around the image */
+  padding: 0px; /* Adjust the padding as needed */
+  margin: 6px 10px 20px 30px;
+}
+
+.user-image-module img {
+  max-width: 80%; /* Ensures the image is not larger than the container */
+  max-height: 150px; /* Adjust the height as needed */
+  object-fit: contain; /* Ensures the aspect ratio is maintained without cropping */
+}
+
+.settings-image-module {
+  flex-grow: 1;
+  display: flex;
+  align-items: center; /* Vertically centers the image in the flex container */
+  justify-content: center; /* Horizontally centers the image in the flex container */
+  padding: 0; /* No padding inside the module */
+  margin-top: 10px; /* Space from the top of the parent container or the preceding element */
+  margin-bottom: -25px; /* Space from the bottom of the parent container or the next element */
+  margin-left: 10px; /* Space from the left side of the parent container */
+  margin-right: 10px; /* Space from the right side of the parent container */
+  margin: 5px 0px 5px 30px;
+
+}
+
+.settings-image-module img {
+  max-width: 100%; /* Ensures the image is not larger than the container */
+  max-height: 700px; /* Adjust the height as needed */
+  object-fit: contain;
+  margin-top: 68px;
+  transform: scale(1.2);
+}
+
+
+.footer-module {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px; /* Adjust padding as needed */
+    border-top: 2px solid black; /* Top border line */
+    margin-top: -18px;
+    background-color: white;
+}
+
+.left-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-text {
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-left: -11px;
+}
+
+.footer-text {
+    font-size: 16px; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between the text and icons */
+}
+
+.payment-icons i {
+    font-size: 24px; /* Adjust the font size to make the icons larger */
+    margin-right: 15px; /* Adds space between the icons */
+  color: #A6ACAF;
+}
+
+
+.favorite-container {
+    display: flex;
+    align-items: center;
+  margin-left: -10px;
+}
+
+#favourite {
+    padding: 5px 10px; /* Adjust padding as needed */
+    margin-right: 10px; /* Space between the text input and the button */
+}
+
+.add-button {
+    padding: 5px 15px; /* Adjust padding as needed */
+    background-color: #6FAEDD; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+/* Styles for the container above the columns */
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px; /* Space before the columns start */
+}
+
+/* Styles for the Paris Tour Module */
+.paris-tour-module {
+border: 1px solid #ccc; /* 方框的边框 */
+  padding: 10px;
+  font-family: Arial, sans-serif; /* 或者您喜欢的字体 */
+  margin-top: -10px;
+}
+
+.tour-detail-row {
+  display: flex;
+  justify-content: space-between; /* 两端对齐 */
+  align-items: center;
+  padding: 1.5px 0;
+}
+
+.tour-detail-row:not(:last-child) {
+  border-bottom: 1px dashed #ccc; /* 为除最后一项之外的每一行添加分隔线 */
+}
+
+
+/* Styles for the Members Module */
+.members-module {
+    flex: 2; /* Take up the remaining space */
+    margin-left: 5px; /* Add space between the two modules */
+    border: 1px solid #ccc;
+  padding: 20px; /* 这里加大内边距来给上方的标签留出空间 */
+  padding-top: 10px; /* 为浮动标签留出额外的空间 */
+  position: relative; /* 为绝对定位的子元素设置参照点 */
+  margin-top: 20px; /* 根据需要调整 */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.members-title {
+  background: #cccccc; /* 设置背景色为灰色 */
+  padding: 5px 10px; /* 根据需要调整内边距 */
+  position: absolute; /* 绝对定位 */
+  top: -20px; /* 向上偏移，根据需要调整 */
+  left: 10px; /* 左侧偏移，根据需要调整 */
+  font-weight: bold; /* 文字加粗 */
+
+  /* 创建梯形的样式 */
+  clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
+}
+
+.member-icons {
+  display: flex; /* 使用Flex布局 */
+  justify-content: space-evenly; /* 图标间的间距均匀分布 */
+  align-items: center; /* 垂直居中对齐 */
+  width: 100%; /* 占满整个父容器的宽度 */
+  margin-top: 10px; /* 距离上方的距离 */
+}
+
+.member-icons .fas.fa-user {
+  font-size: 24px; /* 调整图标大小 */
+}
+
+/* Ensure the main content is correctly styled */
+.main-content {
+    display: flex;
+}
+
+/* Styles for the left and right columns */
+.left-column {
+    flex: 3; /* Adjust as needed */
+}
+
+.right-content {
+    flex: 1; /* Adjust as needed */
+}
+
+/* ... Rest of your CSS for .tour-detail-row, .member-icons, etc ... */
+.icon-caret::before {
+  content: ""; /* 生成伪元素的内容 */
+  border: .3em solid transparent;
+  border-left-color: currentColor; /* 创建朝右的三角形 */
+  transform: translate(10%, -20%); /* 控制图标的位置 */
+  display: inline-block; /* 使伪元素表现得像一个内联块级元素 */
+  vertical-align: middle; /* 确保图标与相邻文本垂直居中 */
+}

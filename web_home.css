@@ -1,0 +1,181 @@
+/* Reset some basic elements */
+body, h1, h2, button, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #00AEEF;
+  color: white;
+}
+
+.navbar {
+  background-color: #A2D9CE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  margin-right: 0.5em;
+  width: 50px; /* 或你需要的大小 */
+  height: auto; /* 保持图像的比例不变 */
+}
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.navigation a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.navigation a:hover:after {
+  opacity: 1;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: white;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.welcome-banner {
+  background-color: #FFF2C1;
+  text-align: center;
+  padding: 2em 0;
+}
+
+.welcome-banner h1{
+  color: #333; /* Dark text for Welcome */
+  margin-bottom: 0.5em; /* Space below the welcome message */
+  margin-top: 0em;
+  font-weight: bold; /* 加粗字体 */
+  font-size: 2.5em; /* 调整字体大小 */
+  text-shadow: 2px 2px 4px #aaa; /* 添加字体阴影效果 */
+  font-family: 'Arial', sans-serif; /* 推荐使用 web 安全字体，如 Arial */
+}
+
+.welcome-banner .slogan {
+  font-style: italic; /* If the text appears to be italic */
+  margin-bottom: 1em; /* Space below the slogan */
+  font-size: 1.2em;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 1em; /* Space between the buttons */
+  margin-bottom: 0.5em;
+}
+
+.button {
+  padding: 0.8em 1em;/* Padding inside the buttons */
+  width: 200px;
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 20px;
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.button.plan-travel {
+  background-color: #6FAEDD; /* Blue color for 'Plan a travel now' button */
+  color: white; /* White text */
+}
+
+.button.find-event {
+  background-color: #CBA052; /* Brown color for 'Find Event' button */
+  color: white; /* White text */
+
+}
+
+.button:hover {
+  opacity: 0.9; /* Slight transparency on hover */
+}
+
+.destination-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.destination-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ensure the row takes full width */
+}
+
+.destination {
+  flex-basis: calc(33.333% - 10px); /* Divide by three and adjust for margin */
+  margin: 5px; /* Small margin for spacing */
+  text-align: center; /* Center the content */
+}
+
+.destination-image {
+  margin-top: 0.8em;
+  width: 80%; /* Adjust size to your preference */
+  height: 230px;
+  margin-bottom: 1em; /* Space below the image */
+  border-radius: 50%; /* Creates a circle/ellipse */
+  object-fit: cover; /* Ensures the image covers the area properly */
+}
+
+.destination h2 {
+  font-weight: bold;
+  margin-bottom: 0.5em; /* Space below the title */
+}
+
+.destination p {
+  margin-bottom: 1em; /* Space below the paragraph */
+}
